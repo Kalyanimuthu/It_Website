@@ -1,0 +1,35 @@
+/* use Lato loaded from Google in base.html */
+:root{
+  --accent-1: #E25C26; /* orange */
+  --accent-2: #F65616; /* bright orange */
+  --accent-3: #0056B3; /* deep blue */
+  --muted: #6B7280;
+}
+
+/* small font family utility */
+.font-lato { font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+/* gradient brand */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2) 40%, var(--accent-3));
+}
+
+/* buttons */
+.btn-brand {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-3));
+  color: white;
+}
+
+/* hero overlay */
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.4));
+}
+
+/* softly round images */
+.rounded-xl-img { border-radius: 1rem; }
+
+/* accessible focus */
+:focus { outline: 3px solid rgba(226,92,38,0.15); outline-offset: 2px; }
+
+/* small utilities */
+.text-accent { color: var(--accent-1); }
