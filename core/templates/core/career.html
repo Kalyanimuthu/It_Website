@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Careers | KK IT Project{% endblock %}
+{% block content %}
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl font-bold text-center mb-4">Careers at KK IT</h1>
+    <p class="text-center text-gray-600 dark:text-gray-300 mb-10">We hire curious engineers and designers. Submit your resume to contact email.</p>
+
+    <div class="grid gap-6">
+      <!-- Sample static listing — if you want dynamic listings, we can add a Job model -->
+      <div data-aos="fade-right" class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow">
+        <h3 class="text-2xl font-semibold">Frontend Developer</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Experience with modern JS and Tailwind. <span class="text-accent font-semibold">Full-time</span></p>
+        <div class="mt-4"><a href="#contact" class="inline-block btn-brand px-4 py-2 rounded">Apply</a></div>
+      </div>
+
+      <div data-aos="fade-left" class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow">
+        <h3 class="text-2xl font-semibold">Backend Developer</h3>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Django / REST experience. <span class="text-accent font-semibold">Full-time</span></p>
+        <div class="mt-4"><a href="#contact" class="inline-block btn-brand px-4 py-2 rounded">Apply</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

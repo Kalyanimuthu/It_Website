@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Team | KK IT Project{% endblock %}
+
+{% block content %}
+
+<section class="py-20 bg-gray-100 dark:bg-gray-800">
+    <h1 class="text-4xl font-bold text-center mb-12">Our Team</h1>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 px-6">
+        {% for t in team %}
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow text-center">
+            <img src="{{ t.photo.url }}" class="w-40 h-40 rounded-full mx-auto object-cover">
+            <h3 class="text-2xl font-bold mt-4">{{ t.name }}</h3>
+            <p class="text-orange-600 font-semibold">{{ t.role }}</p>
+            {% if t.linkedin %}
+            <a href="{{ t.linkedin }}" class="mt-4 inline-block text-blue-600 hover:underline">LinkedIn</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
